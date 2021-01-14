@@ -16,4 +16,10 @@ public class FractionTestShould
         Fraction sum = new Fraction(0).add(new Fraction(0));
         assertEquals(0, sum.intValue());
     }
+
+    @Test
+    public void sumZeroPlusInteger() {
+        Fraction sum = new Fraction(0).add(new Fraction(3));
+        assertEquals(3, sum.intValue());
+    }
 }

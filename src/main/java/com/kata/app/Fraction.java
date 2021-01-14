@@ -6,10 +6,10 @@ package com.kata.app;
  */
 public class Fraction
 {
-    private final int fraction;
+    private final int integerValue;
 
-    public Fraction(int fraction) {
-        this.fraction = fraction;
+    public Fraction(int integerValue) {
+        this.integerValue = integerValue;
     }
 
     public Fraction add(Fraction fraction) {
@@ -17,6 +17,6 @@ public class Fraction
     }
 
     public int intValue() {
-        return 0;
+        return integerValue;
     }
 }
