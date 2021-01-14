@@ -6,8 +6,17 @@ package com.kata.app;
  */
 public class Fraction
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    private final int fraction;
+
+    public Fraction(int fraction) {
+        this.fraction = fraction;
+    }
+
+    public Fraction add(Fraction fraction) {
+        return fraction;
+    }
+
+    public int intValue() {
+        return 0;
     }
 }

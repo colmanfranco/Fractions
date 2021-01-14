@@ -1,5 +1,6 @@
 package com.kata.app;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -9,12 +10,10 @@ import org.junit.Test;
  */
 public class FractionTestShould
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void sumZeroPlusZero()
     {
-        assertTrue( true );
+        Fraction sum = new Fraction(0).add(new Fraction(0));
+        assertEquals(0, sum.intValue());
     }
 }

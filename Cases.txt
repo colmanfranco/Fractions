@@ -1,0 +1,14 @@
+
+
+
+1 - An addition should work the same as fractions as for intgers
+2 - The types have to be the same (fractions)
+3 - Always express fractions in lowest  terms.
+For example (another test!), fraction 4/6 magically becomes 2/3
+4 - Always express fractions as improper and not mixed.
+For example, I want 7/5, not 1 2/5.
+
+-----------
+test case
+1) 0 + 0 = 0
+2)
