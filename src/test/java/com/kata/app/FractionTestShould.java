@@ -52,4 +52,10 @@ public class FractionTestShould
         Fraction sum = new Fraction(7).add(new Fraction(-6));
         assertEquals(1, sum.intValue());
     }
+
+    @Test
+    public void sumPositivePlusNegativeAndObtainNegativeResult() {
+        Fraction sum = new Fraction(8).add(new Fraction(-10));
+        assertEquals(-2, sum.intValue());
+    }
 }
