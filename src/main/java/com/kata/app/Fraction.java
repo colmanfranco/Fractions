@@ -6,12 +6,11 @@ package com.kata.app;
  */
 public class Fraction
 {
-    private final int numerator;
     private final int denominator;
+    private final int numerator;
 
     public Fraction(int integerValue) {
-        this.numerator = integerValue;
-        this.denominator = 1;
+        this(integerValue, 1);
     }
 
     public Fraction(int numerator, int denominator) {
