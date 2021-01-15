@@ -58,4 +58,11 @@ public class FractionTestShould
         Fraction sum = new Fraction(8).add(new Fraction(-10));
         assertEquals(-2, sum.intValue());
     }
+
+    @Test
+    public void sumNonTrivialEqualsDenominators() {
+        Fraction sum = new Fraction(1, 3).add(new Fraction(1, 3));
+        assertEquals(2, sum.getNumerator());
+        assertEquals(3, sum.getDenominator());
+    }
 }
