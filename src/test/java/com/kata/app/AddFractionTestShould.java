@@ -7,16 +7,13 @@ import org.junit.Test;
 public class AddFractionTestShould
 {
     @Test
-    public void sumZeroPlusZero()
-    {
-        Fraction sum = new Fraction(0).add(new Fraction(0));
-        assertEquals(new Fraction(0), sum);
+    public void sumZeroPlusZero() {
+        assertEquals(new Fraction(0), new Fraction(0).add(new Fraction(0)));
     }
 
     @Test
     public void sumZeroPlusInteger() {
-        Fraction sum = new Fraction(0).add(new Fraction(3));
-        assertEquals(new Fraction(3), sum);
+        assertEquals(new Fraction(3), new Fraction(0).add(new Fraction(3)));
     }
 
     @Test
