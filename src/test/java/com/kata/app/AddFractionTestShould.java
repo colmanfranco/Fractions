@@ -22,7 +22,7 @@ public class AddFractionTestShould
     @Test
     public void sumIntegerPlusZero() {
         Fraction sum = new Fraction(1).add(new Fraction(0));
-        assertEquals(1, sum.intValue());
+        assertEquals(new Fraction(1), sum);
     }
 
     @Test
