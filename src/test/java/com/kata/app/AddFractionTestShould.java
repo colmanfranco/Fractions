@@ -34,7 +34,7 @@ public class AddFractionTestShould
     @Test
     public void sumNegativePlusPositiveAndObtainPositiveResult() {
         Fraction sum = new Fraction(-1).add(new Fraction(5));
-        assertEquals(4, sum.intValue());
+        assertEquals(new Fraction(4), sum);
     }
 
     @Test
