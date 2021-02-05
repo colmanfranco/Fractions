@@ -16,7 +16,7 @@ public class AddFractionTestShould
     @Test
     public void sumZeroPlusInteger() {
         Fraction sum = new Fraction(0).add(new Fraction(3));
-        assertEquals(3, sum.intValue());
+        assertEquals(new Fraction(3), sum);
     }
 
     @Test
