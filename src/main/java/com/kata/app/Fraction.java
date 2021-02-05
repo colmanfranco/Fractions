@@ -32,17 +32,6 @@ public class Fraction
         return denominator;
     }
 
-//    @Override
-//    public boolean equals(Object other) {
-//        if (other instanceof Fraction) {
-//            Fraction that = (Fraction) other;
-//            return this.numerator == that.numerator
-//                    && this.denominator == that.denominator;
-//        }
-//        return false;
-//    }
-
-
     @Override
     public boolean equals(Object other) {
         if (other instanceof Fraction) {
