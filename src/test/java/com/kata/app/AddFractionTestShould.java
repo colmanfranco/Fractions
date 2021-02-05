@@ -10,7 +10,7 @@ public class AddFractionTestShould
     public void sumZeroPlusZero()
     {
         Fraction sum = new Fraction(0).add(new Fraction(0));
-        assertEquals(0, sum.intValue());
+        assertEquals(new Fraction(0), sum);
     }
 
     @Test
