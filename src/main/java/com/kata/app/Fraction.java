@@ -20,18 +20,6 @@ public class Fraction
         return new Fraction(this.numerator + that.numerator, denominator);
     }
 
-    public int intValue() {
-        return numerator;
-    }
-
-    public int getNumerator() {
-        return numerator;
-    }
-
-    public int getDenominator() {
-        return denominator;
-    }
-
     @Override
     public boolean equals(Object other) {
         if (other instanceof Fraction) {
@@ -42,19 +30,13 @@ public class Fraction
         return false;
     }
 
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(denominator, numerator);
-//    }
+    @Override
+    public int hashCode() {
+        return numerator * 19 + denominator;
+    }
 
     @Override
     public String toString() {
         return String.format("%d/%d", numerator, denominator);
     }
-
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(denominator, numerator);
-//    }
 }
