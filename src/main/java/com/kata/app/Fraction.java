@@ -1,9 +1,7 @@
 package com.kata.app;
 
-/**
- * Hello world!
- *
- */
+import java.util.Objects;
+
 public class Fraction
 {
     private final int denominator;
@@ -33,4 +31,41 @@ public class Fraction
     public int getDenominator() {
         return denominator;
     }
+
+//    @Override
+//    public boolean equals(Object other) {
+//        if (other instanceof Fraction) {
+//            Fraction that = (Fraction) other;
+//            return this.numerator == that.numerator
+//                    && this.denominator == that.denominator;
+//        }
+//        return false;
+//    }
+
+
+    @Override
+    public boolean equals(Object other) {
+        if (other instanceof Fraction) {
+            Fraction that = (Fraction) other;
+            return this.numerator == that.numerator &&
+                    this.denominator == that.denominator;
+        }
+        return false;
+    }
+
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(denominator, numerator);
+//    }
+
+    @Override
+    public String toString() {
+        return String.format("%d/%d", numerator, denominator);
+    }
+
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(denominator, numerator);
+//    }
 }
